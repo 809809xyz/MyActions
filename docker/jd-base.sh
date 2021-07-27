@@ -162,15 +162,6 @@ fi
 
 if [ ! -f "$CONFIG_PATH/config.sh" ]; then
     docker cp $CONTAINER_NAME:/jd/sample/config.sh.sample $CONFIG_PATH/config.sh
-    #添加脚本作者助力码
-    sed -i 's/ForOtherFruit1=""/ForOtherFruit1=""/g' $CONFIG_PATH/config.sh
-    sed -i 's/ForOtherBean1=""/ForOtherBean1=""/g' $CONFIG_PATH/config.sh
-    sed -i 's/ForOtherJdFactory1=""/ForOtherJdFactory1=""/g' $CONFIG_PATH/config.sh
-    sed -i 's/ForOtherJdzz1=""/ForOtherJdzz1=""/g' $CONFIG_PATH/config.sh
-    sed -i 's/ForOtherJoy1=""/ForOtherJoy1=""/g' $CONFIG_PATH/config.sh #crazyJoy
-    sed -i 's/ForOtherSgmh1=""/ForOtherSgmh1=""/g' $CONFIG_PATH/config.sh #闪购盲盒
-    sed -i 's/ForOtherDreamFactory1=""/ForOtherDreamFactory1=""/g' $CONFIG_PATH/config.sh #京喜工厂
-    sed -i 's/ForOtherPet1=""/ForOtherPet1=""/g' $CONFIG_PATH/config.sh #东东萌宠
  fi
 
 log "4.下面列出所有容器"
